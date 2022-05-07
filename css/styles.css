@@ -38,13 +38,13 @@ section {
     padding: 10px;
 }
 
-html, header {
+html, h1 {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
- footer {
+footer {
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
