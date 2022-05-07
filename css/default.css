@@ -1,0 +1,36 @@
+/** Blue for links **/
+footer div a:hover, h1:hover, section a:hover {
+    color: #8ec5e9;
+}
+
+/** Main blue **/
+::-webkit-scrollbar-thumb, nav a:hover {
+    background-color: #60b3eb;
+}
+strong a, h1 {
+    color: #59a3d6;
+}
+    
+/** Monochrome greys; from lightest to darkest **/
+html, a  {
+    color: #1a2740;
+}
+strong, h2 {
+    color: #7a7a7a;
+}
+
+html {
+    background: white;
+}
+
+footer a {
+    color: white;
+}
+
+.top a:hover {
+    color: #1a2740;
+}
+
+nav, footer div {
+    background-color: #59a3d6;
+}

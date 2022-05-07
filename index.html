@@ -1,30 +1,74 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
         <meta charset="utf-8">
-        <title>Mary Vuong</title>
-
+        <title>mcvuong</title>
         <!--Styles-->
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" type = "text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" id="theme" href="css/default.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻</text></svg>">
+        <script src="https://kit.fontawesome.com/82d8825b4e.js" crossorigin="anonymous"></script>
         
     </head>
     <body>
+        <button>🌅</button>
         <header>
-            <h1>Mary Vuong</h1>
+            <a href="#" onclick="toggle()" id="home"><h1>mcvuong</h1></a>
             <h2 id="typedtext"></h2>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="current">HOME</a></li>
-                <li><a href="./img/maryvuong.pdf" target=" ">RESUME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="writing.html">WRITING</a></li>
-            </ul>
-        </nav>
+
+        <footer>
+            <nav>
+                <a href="#" onclick="toggle()">About</a>
+                <a href="./img/marycvuong.pdf" target=" ">Résumé</a>
+                <a href="https://drive.google.com/file/d/12NQdcDJxyEQP5AdhJCPV_M3FKwb-T4wh/view?usp=sharing" target=" ">Samples</a>
+            </nav>
+            <div class="top">
+                <a href="mailto:me@mcvuong.com" target=" "><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mcvuong/" target=" "><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mcvuong" target=" "><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+       
+
+        <section id="about" class="default">
+            <h3>Hi, I'm Mary</h3>
+
+                <p>
+                    I'm a recent graduate from <strong><a href="https://www.rochester.edu/" target=" ">the University of Rochester</a></strong>, 
+                    where I studied <strong>computer science</strong> and <strong>English</strong>. 
+                    Although I'm a writer and a coder, I love writing more.
+                </p>
+                <p>
+                    Currently, I'm a technical content writer for <strong><a href="https://www.miscreants.com/" target=" ">Miscreants</a></strong>, 
+                    a security design company. I've worked there since 2019, and have mainly worked on external writing 
+                    (technical posts, social media content, and SEO). 
+                </p>
+                <p>
+                    I've also worked at other companies. My most recent experience 
+                    is at <strong><a href="https://www.rochester.edu/" target=" ">the University of Rochester</a></strong> 
+                    as a TA. However, I have also worked as a technical writer intern 
+                    at <strong><a href="https://sciencelogic.com/" target=" ">ScienceLogic</a></strong> and as 
+                    a frontend web dev and technical writer at <strong><a href="https://www.cloudsecuritylabs.io/" target=" ">Cloud Security Labs</a></strong>.
+                </p>
+                <p>
+                    Since I've had the opportunity to work at multiple companies, 
+                    I've been exposed to many tools. I have experience with all the major 
+                    version control tools (such as <strong>Git</strong> and <strong>SVN</strong>), 
+                    and several project management tools. I've also worked with various 
+                    forms of <strong>markdown</strong>, <strong>Microsoft Word</strong>, 
+                    and <strong>Madcap Flare</strong>. Being a computer science major, 
+                    I also have experience working in <strong>Javascript</strong>, <strong>Java</strong>, 
+                    and <strong>Swift</strong>.
+                </p>
+                <p>
+                    When I'm not writing or coding, I'm either working out, gaming, playing music, 
+                    or just having a good time.
+                </p>
+        </section>
     </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/type.js"></script>
 </html>
