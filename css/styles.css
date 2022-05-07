@@ -103,6 +103,7 @@ button {
     font-size: 8vh;
     background-color: transparent;
     border: transparent;
+    cursor: pointer;
 }
 
 .top {
