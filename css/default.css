@@ -1,22 +1,20 @@
 /** Blue for links **/
-footer div a:hover, h1:hover, section a:hover {
-    color: #8ec5e9;
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.135);
 }
 
 /** Main blue **/
-::-webkit-scrollbar-thumb, nav a:hover {
-    background-color: #60b3eb;
+::-webkit-scrollbar-thumb{
+    background-color: #59a3d6;
 }
 strong a, h1, #ellipsis {
     color: #59a3d6;
 }
     
 /** Monochrome greys; from lightest to darkest **/
-html, a  {
-    color: #1a2740;
-}
-strong, h2 {
-    color: #7a7a7a;
+html, a, h1:hover, section a:hover, h2  {
+    color: #616180;
 }
 
 html {
@@ -32,9 +30,13 @@ footer a, .openMenu #ellipsis {
 }
 
 .top a:hover {
-    color: #1a2740;
+    color: #616180;
 }
 
-nav, footer div, .openMenu {
-    background-color: #59a3d6;
+.openMenu, footer {
+    background: linear-gradient(to top, #616180, #60b3eb);
+}
+
+.openMenu footer {
+    background: none;
 }
