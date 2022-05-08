@@ -11,7 +11,7 @@ nav a:hover {
 ::-webkit-scrollbar-thumb {
     background-color: #59a3d6;
 }
-strong a, h1, footer div a:hover {
+strong a, h1, footer div a:hover, #ellipsis {
     color: #59a3d6;
 }
     
@@ -26,6 +26,13 @@ html {
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,39,64,1) 35%, rgba(41,69,116,1) 60%, rgba(89,163,214,1) 100%);
 }
 
-nav, footer div {
+.openMenu #ellipsis {
+    color: rgba(26,39,64,1);
+}
+
+.openMenu {
+    background: #1c1c1c;
+}
+nav, footer div{
     background-color: #1c1c1c;
 }

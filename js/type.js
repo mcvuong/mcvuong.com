@@ -2,11 +2,26 @@
 var aText = ("Content Gone Technical.").split("");
 
 var onMain = false;
+var onMenu = false;
 
 console.log(onMain);
 $('header').addClass("default"); 
 $('section').hide();
 typewriter("", 0);
+
+if ($(window).width() < 399) {
+    $('footer').hide();
+}
+
+ $(window).resize(function() {
+    $('html').removeClass('openMenu');
+    if ($(window).width() < 399) {
+        $('footer').hide();
+     }
+     if ($(window).width() > 400) {
+        $('footer').show();
+     }
+ })
 
 function typewriter(typed, current) //typewriter for h2
 {
@@ -19,7 +34,7 @@ function typewriter(typed, current) //typewriter for h2
     else setTimeout(() => {  if (current <= aText.length - 1) typewriter(typed, current);}, 50);
 }
 
-$("button").click(function() {
+$("#mode").click(function() {
     console.log("We are at mode.");
     console.log($(this).html());
     if ($(this).html() == "🌅") {
@@ -31,12 +46,38 @@ $("button").click(function() {
         $('#theme').attr('href','css/default.css');
     }
 })
+
+$("#ellipsis").click(function() {
+    onMenu = !onMenu;
+
+    if (onMenu == false) {
+        $('main').show();
+        $('footer').hide();
+        $('html').removeClass('openMenu');
+    }
+    else {
+        $('main').hide();
+        $('footer').show();
+        $('html').addClass('openMenu');
+    }
+})
+
 function toggle () {
-    console.log("We got here!");
+    
+    onMenu = false;
+
+    if ($(window).width() < 399) {
+        $('footer').hide();
+        $('html').removeClass('openMenu');
+    }
+    
+    $('main').show();
     onMain = !onMain;
     console.log(onMain);
     if (onMain == false) {
         $('header').addClass("default");
+        $('#mode').removeClass("about");
+        $('#mode').addClass("default");
         $('header').removeClass("about");
         $('section').hide();
         typewriter("", 0);
@@ -44,8 +85,13 @@ function toggle () {
     }
     else {
         $('header').addClass("about");
-        $('header').removeClass("default");  
-        typewriter("", 0);
+        $('#mode').addClass("about");
+        $('#mode').removeClass("default");
+        $('header').removeClass("default");
+        if ($(window).width() < 399) {
+            $('footer').hide();
+            $('html').removeClass('openMenu');
+         }  
 
         setTimeout(() => { $('section').fadeIn();}, 200);
     }

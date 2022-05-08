@@ -7,7 +7,7 @@ footer div a:hover, h1:hover, section a:hover {
 ::-webkit-scrollbar-thumb, nav a:hover {
     background-color: #60b3eb;
 }
-strong a, h1 {
+strong a, h1, #ellipsis {
     color: #59a3d6;
 }
     
@@ -23,7 +23,11 @@ html {
     background: white;
 }
 
-footer a {
+.menu {
+    background: #59a3d6;
+}
+
+footer a, .openMenu #ellipsis {
     color: white;
 }
 
@@ -31,6 +35,6 @@ footer a {
     color: #1a2740;
 }
 
-nav, footer div {
+nav, footer div, .openMenu {
     background-color: #59a3d6;
 }
